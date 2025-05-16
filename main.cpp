@@ -1,42 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "Car.h"
 using namespace std;
-
-class Car {
-    private:
-        int carPrice;
-    public:
-        int year;
-        string brand;
-
-        Car(int y, string b) {
-            year = y;
-            brand = b;
-        }
-
-        // Car Validation Method
-        void carValidation() {
-            if (year < 2010) {
-                cout << "Old" << endl;
-            }
-            else {
-                cout << "New" << endl;
-            }
-        }
-
-        int maxSpeed(int speed) {
-            return speed;
-        } 
-
-        void setCarPrice(int p) {
-            carPrice = p;
-        }
-
-        int getCarPrice() {
-            return carPrice;
-        }
-};
 
 int main() {
     
