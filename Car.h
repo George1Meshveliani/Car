@@ -17,17 +17,11 @@ class Car {
         // Car Validation Method
         void carValidation();
 
-        int maxSpeed(int speed) {
-            return speed;
-        } 
+        int maxSpeed(int speed);
 
-        void setCarPrice(int p) {
-            carPrice = p;
-        }
+        void setCarPrice(int p);
 
-        int getCarPrice() {
-            return carPrice;
-        }
+        int getCarPrice();
 };
 
 void Car::carValidation() {
@@ -38,3 +32,16 @@ void Car::carValidation() {
         cout << "New" << endl;
     }
 };
+
+
+int Car::maxSpeed(int speed) {
+    return speed;
+};
+
+void Car::setCarPrice(int p) {
+        carPrice = p;
+};
+
+int Car::getCarPrice() {
+    return carPrice;
+}
